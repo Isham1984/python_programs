@@ -1,0 +1,14 @@
+# Write a program to check if the number is an Armstrong Number:
+
+num = input("Enter a number: ")
+list_num = list(num)
+order_of_number = len(num)
+print(order)
+sum_ = 0
+for i in list_num:
+    sum_ = sum_ + int(i)**order
+    
+if sum_ == int(num):
+    print(f'{num} is an Armstrong Number')
+else:
+    print(f'{num} is not an Armstrong Number')
