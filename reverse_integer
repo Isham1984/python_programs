@@ -1,11 +1,47 @@
+#Using Recursion method
+def reverse_num(number):
+    if len(number) == 0:
+        return number
+    return reverse_num(number[1:])+ number[0]
+
+num = input("Enter a number: ")
+print(reverse_num(num))
+
+
 # Using while loop 
 num = int(input("Enter a number: "))
-
 reverse_num = 0
-
 while num != 0:
     remainder = num % 10
     reverse_num = (reverse_num * 10) + remainder
     num = int(num /10)
     
 print(reverse_num)
+
+# Using for loop 
+num = input("Enter a number: ")
+reverse_num = ''
+j = len(num)-1
+for i in range(0, len(num)):
+    reverse_num += num[j]
+    j -=1
+    
+print(reverse_num)
+
+#Using string methods
+num = input("Enter a number: ")
+str_num = ''.join(reversed(num))
+print(str_num)
+
+#string slicing method
+num = input("Enter a number: ")
+num = num[::-1]
+print(num)
+
+#Using stack method
+
+
+
+
+
+
